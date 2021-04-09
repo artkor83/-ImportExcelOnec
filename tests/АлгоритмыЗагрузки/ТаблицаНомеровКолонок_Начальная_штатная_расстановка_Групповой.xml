@@ -1,0 +1,160 @@
+﻿<ValueTable xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<column>
+		<Name xsi:type="xs:string">Имя</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Представление</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">НомерКолонки</Name>
+		<ValueType>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>10</Digits>
+				<FractionDigits>0</FractionDigits>
+				<AllowedSign>Nonnegative</AllowedSign>
+			</NumberQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипЗначения</Name>
+		<ValueType>
+			<Type>TypeDescription</Type>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипЗначенияПредставление</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<row>
+		<Value>Сотрудник</Value>
+		<Value>Сотрудник</Value>
+		<Value>1</Value>
+		<Value>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>99</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</Value>
+		<Value>Строка(99)</Value>
+	</row>
+	<row>
+		<Value>ВидЗанятости</Value>
+		<Value>Вид занятости</Value>
+		<Value>2</Value>
+		<Value>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВидыЗанятости</Type>
+		</Value>
+		<Value>ПеречислениеСсылка.ВидыЗанятости</Value>
+	</row>
+	<row>
+		<Value>ДатаПриема</Value>
+		<Value>Дата приема</Value>
+		<Value>3</Value>
+		<Value>
+			<Type>xs:dateTime</Type>
+			<DateQualifiers>
+				<DateFractions>Date</DateFractions>
+			</DateQualifiers>
+		</Value>
+		<Value>Дата(Дата)</Value>
+	</row>
+	<row>
+		<Value>Должность</Value>
+		<Value>Должность</Value>
+		<Value>4</Value>
+		<Value>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Должности</Type>
+		</Value>
+		<Value>СправочникСсылка.Должности</Value>
+	</row>
+	<row>
+		<Value>Подразделение</Value>
+		<Value>Подразделение</Value>
+		<Value>5</Value>
+		<Value>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПодразделенияОрганизаций</Type>
+		</Value>
+		<Value>СправочникСсылка.ПодразделенияОрганизаций</Value>
+	</row>
+	<row>
+		<Value>Оклад</Value>
+		<Value>Оклад</Value>
+		<Value>6</Value>
+		<Value>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>15</Digits>
+				<FractionDigits>2</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
+		</Value>
+		<Value>Число(15, 2)</Value>
+	</row>
+	<row>
+		<Value>СтавкаАванс</Value>
+		<Value>Ставка аванс</Value>
+		<Value>7</Value>
+		<Value>
+			<Type>xs:decimal</Type>
+			<NumberQualifiers>
+				<Digits>15</Digits>
+				<FractionDigits>2</FractionDigits>
+				<AllowedSign>Any</AllowedSign>
+			</NumberQualifiers>
+		</Value>
+		<Value>Число(15, 2)</Value>
+	</row>
+	<row>
+		<Value>График</Value>
+		<Value>График</Value>
+		<Value>8</Value>
+		<Value>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ГрафикиРаботыСотрудников</Type>
+		</Value>
+		<Value>СправочникСсылка.ГрафикиРаботыСотрудников</Value>
+	</row>
+	<row>
+		<Value>Организация</Value>
+		<Value>Организация</Value>
+		<Value>0</Value>
+		<Value>
+			<Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</Type>
+		</Value>
+		<Value>СправочникСсылка.Организации</Value>
+	</row>
+	<row>
+		<Value>Описание</Value>
+		<Value>Описание</Value>
+		<Value>0</Value>
+		<Value>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>99</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</Value>
+		<Value>Строка(99)</Value>
+	</row>
+</ValueTable>

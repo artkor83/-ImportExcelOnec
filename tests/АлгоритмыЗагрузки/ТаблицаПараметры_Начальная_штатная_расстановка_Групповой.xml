@@ -1,0 +1,20 @@
+﻿<ValueTable xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<column>
+		<Name xsi:type="xs:string">Имя</Name>
+		<ValueType>
+			<Type>xs:string</Type>
+			<StringQualifiers>
+				<Length>0</Length>
+				<AllowedLength>Variable</AllowedLength>
+			</StringQualifiers>
+		</ValueType>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Значение</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value>Организация</Value>
+		<Value xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="d3p1:CatalogRef.Организации">3b814b01-5c34-11eb-8931-002590714ac8</Value>
+	</row>
+</ValueTable>
