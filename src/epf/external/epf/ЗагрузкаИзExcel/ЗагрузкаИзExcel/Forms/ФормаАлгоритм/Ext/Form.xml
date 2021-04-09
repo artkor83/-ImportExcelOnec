@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПринять" id="31">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Принять</CommandName>
+				<ExtendedTooltip name="ФормаПринятьРасширеннаяПодсказка" id="32"/>
+			</Button>
+			<Button name="ФормаВосстановить" id="14">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Восстановить</CommandName>
+				<ExtendedTooltip name="ФормаВосстановитьРасширеннаяПодсказка" id="15"/>
+			</Button>
+			<Button name="ФормаСохранить" id="8">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Сохранить</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="9"/>
+			</Button>
+			<Button name="ФормаДобавитьОбработкуКолонок" id="29">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьОбработкуКолонок</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьОбработкуКолонокРасширеннаяПодсказка" id="30"/>
+			</Button>
+			<Button name="ФормаДобавитьВызовОбработки" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьВызовОбработки</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьВызовОбработкиРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="ФормаДобавитьБуферКода" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьБуферКода</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьБуферКодаРасширеннаяПодсказка" id="13"/>
+			</Button>
+			<Button name="ФормаДобавитьКодОтладки" id="21">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьКодОтладки</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьКодОтладкиРасширеннаяПодсказка" id="22"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="16">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<TextDocumentField name="ПодсказкаТекст" id="18">
+					<DataPath>ПодсказкаТекст</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>20</Width>
+					<ContextMenu name="ПодсказкаТекстКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПодсказкаТекстРасширеннаяПодсказка" id="20"/>
+				</TextDocumentField>
+				<TextDocumentField name="АлгоритмТекст" id="27">
+					<DataPath>АлгоритмТекст</DataPath>
+					<ContextMenu name="АлгоритмТекстКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="АлгоритмТекстРасширеннаяПодсказка" id="25"/>
+				</TextDocumentField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="28">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаИзExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="АлгоритмТекст" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст алгоритма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПодсказкаТекст" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьОбработкуКолонок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить обработку колонок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить обработку колонок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьОбработкуКолонок</Action>
+		</Command>
+		<Command name="Принять" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Принять</Action>
+		</Command>
+		<Command name="Сохранить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveValues</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Сохранить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьВызовОбработки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вызов обработки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вызов обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВызовОбработки</Action>
+		</Command>
+		<Command name="ДобавитьБуферКода" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить буфер кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить буфер кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьБуферКода</Action>
+		</Command>
+		<Command name="Восстановить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.RestoreValues</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Восстановить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьКодОтладки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить код отладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить код отладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКодОтладки</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="АлгоритмИмя">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>
