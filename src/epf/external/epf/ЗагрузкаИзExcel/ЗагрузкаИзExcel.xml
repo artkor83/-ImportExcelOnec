@@ -119,6 +119,7 @@
 			<Form>ФормаПоискТипов</Form>
 			<Form>ВыборТипа</Form>
 			<Form>ВыборСписокЗначений</Form>
+			<Form>ВводТекста</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
