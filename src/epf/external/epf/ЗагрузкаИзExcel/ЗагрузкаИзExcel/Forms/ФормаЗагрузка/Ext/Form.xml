@@ -4,10 +4,10 @@
 	<ScalingMode>Compact</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаПолучитьДанные" id="414">
+			<Button name="ФормаПолучитьДанные" id="416">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПолучитьДанные</CommandName>
-				<ExtendedTooltip name="ФормаПолучитьДанныеРасширеннаяПодсказка" id="415"/>
+				<ExtendedTooltip name="ФормаПолучитьДанныеРасширеннаяПодсказка" id="417"/>
 			</Button>
 			<Button name="ФормаЗагрузитьДанные" id="82">
 				<Type>CommandBarButton</Type>
@@ -159,7 +159,7 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаПолучитьДанные" id="398">
+						<UsualGroup name="ГруппаПолучитьДанные" id="400">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -175,9 +175,9 @@
 							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПолучитьДанныеРасширеннаяПодсказка" id="396"/>
+							<ExtendedTooltip name="ГруппаПолучитьДанныеРасширеннаяПодсказка" id="398"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаExcel" id="402">
+								<UsualGroup name="ГруппаExcel" id="404">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -193,13 +193,13 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаExcelРасширеннаяПодсказка" id="400"/>
+									<ExtendedTooltip name="ГруппаExcelРасширеннаяПодсказка" id="402"/>
 									<ChildItems>
-										<UsualGroup name="Группа1" id="408">
+										<UsualGroup name="Группа1" id="410">
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="406"/>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="408"/>
 											<ChildItems>
 												<InputField name="ИмяФайлаЗагрузки" id="301">
 													<DataPath>ИмяФайлаЗагрузки</DataPath>
@@ -231,10 +231,10 @@
 														<Event name="StartChoice">СписокЛистовНачалоВыбора</Event>
 													</Events>
 												</InputField>
-												<Button name="ОбновитьExcel" id="421">
+												<Button name="ОбновитьExcel" id="423">
 													<Type>UsualButton</Type>
 													<CommandName>Form.Command.ОбновитьExcel</CommandName>
-													<ExtendedTooltip name="ОбновитьExcelРасширеннаяПодсказка" id="404"/>
+													<ExtendedTooltip name="ОбновитьExcelРасширеннаяПодсказка" id="406"/>
 												</Button>
 											</ChildItems>
 										</UsualGroup>
@@ -269,11 +269,11 @@
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="Группа4" id="394">
+								<UsualGroup name="Группа4" id="396">
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="392"/>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="394"/>
 									<ChildItems>
 										<InputField name="НомерНачало" id="307">
 											<DataPath>НомерНачало</DataPath>
@@ -394,6 +394,11 @@
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ТаблицаДанныхExcelЗагрузитьИзТекста</CommandName>
 														<ExtendedTooltip name="ТаблицаДанныхExcelОбъектТаблицаДанныхExcelЗагрузитьИзТекстаРасширеннаяПодсказка" id="378"/>
+													</Button>
+													<Button name="ТаблицаДанныхExcelОбъектУКО_ПередатьВременнуюТаблицу" id="381">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.УКО_ПередатьВременнуюТаблицу</CommandName>
+														<ExtendedTooltip name="ТаблицаДанныхExcelОбъектУКО_ПередатьВременнуюТаблицуРасширеннаяПодсказка" id="382"/>
 													</Button>
 												</ChildItems>
 											</AutoCommandBar>
@@ -981,7 +986,7 @@
 		</Pages>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Объект" id="381">
+		<Attribute name="Объект" id="383">
 			<Type>
 				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаИзExcel</v8:Type>
 			</Type>
@@ -995,7 +1000,7 @@
 				<Field>1/0:8cd2e420-5e64-479f-a38c-18d8c4d48af9</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТаблицаНомеровКолонок" id="385">
+		<Attribute name="ТаблицаНомеровКолонок" id="387">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1006,7 +1011,7 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Имя" id="382">
+				<Column name="Имя" id="384">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1021,7 +1026,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Представление" id="386">
+				<Column name="Представление" id="388">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1036,7 +1041,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="НомерКолонки" id="389">
+				<Column name="НомерКолонки" id="391">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1052,7 +1057,7 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
-				<Column name="ТипЗначения" id="412">
+				<Column name="ТипЗначения" id="414">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1063,7 +1068,7 @@
 						<v8:Type>v8:TypeDescription</v8:Type>
 					</Type>
 				</Column>
-				<Column name="ТипЗначенияПредставление" id="410">
+				<Column name="ТипЗначенияПредставление" id="412">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1080,7 +1085,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Алгоритм_ПоискДанныхСтроки" id="390">
+		<Attribute name="Алгоритм_ПоискДанныхСтроки" id="392">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1095,7 +1100,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Алгоритм_ЗагрузкаДанныхСтроки" id="413">
+		<Attribute name="Алгоритм_ЗагрузкаДанныхСтроки" id="415">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1110,7 +1115,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТаблицаВнешниеФайлы" id="411">
+		<Attribute name="ТаблицаВнешниеФайлы" id="413">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1121,7 +1126,7 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Имя" id="383">
+				<Column name="Имя" id="385">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1136,7 +1141,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Данные" id="387">
+				<Column name="Данные" id="389">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1145,7 +1150,7 @@
 					</Title>
 					<Type/>
 				</Column>
-				<Column name="ТипФайла" id="391">
+				<Column name="ТипФайла" id="393">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1162,7 +1167,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Алгоритм_ПередЗагрузкойДанных" id="422">
+		<Attribute name="Алгоритм_ПередЗагрузкойДанных" id="424">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1177,7 +1182,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПаузаСек" id="407">
+		<Attribute name="ПаузаСек" id="409">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1196,7 +1201,7 @@
 				<Field>ПаузаСек</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТабДок" id="405">
+		<Attribute name="ТабДок" id="407">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1207,7 +1212,7 @@
 				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="РежимЧтенияДанных" id="401">
+		<Attribute name="РежимЧтенияДанных" id="403">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1225,7 +1230,7 @@
 				<Field>РежимЧтенияДанных</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТаблицаЗначения" id="399">
+		<Attribute name="ТаблицаЗначения" id="401">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1239,7 +1244,7 @@
 				<Field>ТаблицаЗначения</Field>
 			</Save>
 			<Columns>
-				<Column name="Имя" id="384">
+				<Column name="Имя" id="386">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1254,7 +1259,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Значение" id="388">
+				<Column name="Значение" id="390">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1265,7 +1270,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ИмяФайлаЗагрузки" id="397">
+		<Attribute name="ИмяФайлаЗагрузки" id="399">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1284,7 +1289,7 @@
 				<Field>ИмяФайлаЗагрузки</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ИмяЛиста" id="395">
+		<Attribute name="ИмяЛиста" id="397">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1303,7 +1308,7 @@
 				<Field>ИмяЛиста</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="НомерНачало" id="393">
+		<Attribute name="НомерНачало" id="395">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1322,7 +1327,7 @@
 				<Field>НомерНачало</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="НомерКонец" id="420">
+		<Attribute name="НомерКонец" id="422">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1341,7 +1346,7 @@
 				<Field>НомерКонец</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ИмяФайлаЗагрузкиМакет" id="419">
+		<Attribute name="ИмяФайлаЗагрузкиМакет" id="421">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1360,7 +1365,7 @@
 				<Field>ИмяФайлаЗагрузкиМакет</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="СписокЛистов" id="403">
+		<Attribute name="СписокЛистов" id="405">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1375,7 +1380,7 @@
 				<Field>СписокЛистов</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="СписокТиповПодбор" id="423">
+		<Attribute name="СписокТиповПодбор" id="425">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1386,7 +1391,7 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ШагЗагрузкиДанных" id="418">
+		<Attribute name="ШагЗагрузкиДанных" id="420">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1405,7 +1410,7 @@
 				<Field>ШагЗагрузкиДанных</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ЗагрузкаВТранзакции" id="417">
+		<Attribute name="ЗагрузкаВТранзакции" id="419">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1419,7 +1424,7 @@
 				<Field>ЗагрузкаВТранзакции</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ШагЧтенияДанных" id="409">
+		<Attribute name="ШагЧтенияДанных" id="411">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1435,7 +1440,7 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТестоваяЗагрузка" id="416">
+		<Attribute name="ТестоваяЗагрузка" id="418">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1908,6 +1913,21 @@
 			</ToolTip>
 			<Action>ТаблицаДанныхExcelЗагрузитьИзТекста</Action>
 		</Command>
+		<Command name="УКО_ПередатьВременнуюТаблицу" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(УКО) Передать временную таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УКО передать временную таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УКО_ПередатьВременнуюТаблицу</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="АлгоритмыСтрокой">
@@ -1937,6 +1957,12 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+		<Parameter name="УКО_Встроено">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 			<KeyParameter>true</KeyParameter>
 		</Parameter>

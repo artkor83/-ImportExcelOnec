@@ -120,6 +120,8 @@
 			<Form>ВыборТипа</Form>
 			<Form>ВыборСписокЗначений</Form>
 			<Form>ВводТекста</Form>
+			<Form>УКО_Подключить</Form>
+			<Form>УКО_ВыборВТ</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
