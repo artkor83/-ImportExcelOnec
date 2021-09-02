@@ -1,22 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<Form uuid="6cae9585-2cdb-4d61-bd4e-4d8344ba043e">
+	<ExternalDataProcessor uuid="9f168eae-f320-4796-afd9-83d3b25e5a5b">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>1d0a0fe4-b286-452a-82db-47a96ecae983</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.Алгоритм_ДляРасчетаСреднего" category="Object">
+				<xr:TypeId>96aa15ad-c5e6-4c72-bbb1-0c1709e28a4a</xr:TypeId>
+				<xr:ValueId>e6b15bec-d495-4949-93fc-481516199e08</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>ФормаПоискТипов</Name>
+			<Name>Алгоритм_ДляРасчетаСреднего</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Форма поиск типов</v8:content>
+					<v8:content>Алгоритм для расчета среднего</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<FormType>Managed</FormType>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<UsePurposes>
-				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
-				<v8:Value xsi:type="app:ApplicationUsePurpose">MobilePlatformApplication</v8:Value>
-			</UsePurposes>
-			<ExtendedPresentation/>
+			<DefaultForm>ExternalDataProcessor.Алгоритм_ДляРасчетаСреднего.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
 		</Properties>
-	</Form>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>МакетОшибокФСС</Template>
+		</ChildObjects>
+	</ExternalDataProcessor>
 </MetaDataObject>

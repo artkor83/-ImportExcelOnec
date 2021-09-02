@@ -1,47 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<Title>
-		<v8:item>
-			<v8:lang>ru</v8:lang>
-			<v8:content>Обработка УКО</v8:content>
-		</v8:item>
-	</Title>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
-	<AutoTitle>false</AutoTitle>
-	<ScalingMode>Compact</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаУКО_Подключить" id="6">
+			<Button name="ФормаЗагрузкаДанныхПриемНаРаботу" id="28">
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.УКО_Подключить</CommandName>
-				<ExtendedTooltip name="ФормаУКО_ПодключитьРасширеннаяПодсказка" id="8"/>
+				<CommandName>Form.Command.ЗагрузкаДанныхПриемНаРаботу</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузкаДанныхПриемНаРаботуРасширеннаяПодсказка" id="29"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
-		<InputField name="УКО_Путь" id="3">
-			<DataPath>УКО_Путь</DataPath>
-			<ChoiceButton>true</ChoiceButton>
-			<ContextMenu name="УКО_ПутьКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="УКО_ПутьРасширеннаяПодсказка" id="5"/>
-			<Events>
-				<Event name="StartChoice">УКО_ПутьНачалоВыбора</Event>
-			</Events>
-		</InputField>
+		<TextDocumentField name="ОтладкаТекст" id="30">
+			<DataPath>ОтладкаТекст</DataPath>
+			<ContextMenu name="ОтладкаТекстКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ОтладкаТекстРасширеннаяПодсказка" id="32"/>
+		</TextDocumentField>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Объект" id="7">
+		<Attribute name="Объект" id="33">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаИзExcel</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Алгоритм_ДляРасчетаСреднего</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="УКО_Путь" id="2">
+		<Attribute name="ОтладкаТекст" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Управляемая консоль отчетов х.х.х</v8:content>
+					<v8:content>Отладка текст</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -52,26 +40,25 @@
 				</v8:StringQualifiers>
 			</Type>
 			<Save>
-				<Field>УКО_Путь</Field>
+				<Field>ОтладкаТекст</Field>
 			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="УКО_Подключить" id="1">
+		<Command name="ЗагрузкаДанныхПриемНаРаботу" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подключить</v8:content>
+					<v8:content>Загрузка данных прием на работу</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>УКО подключить</v8:content>
+					<v8:content>Загрузка данных прием на работу</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Ctrl+S</Shortcut>
-			<Action>УКО_Подключить</Action>
+			<Action>ЗагрузкаДанныхПриемНаРаботу</Action>
 		</Command>
 	</Commands>
 </Form>
