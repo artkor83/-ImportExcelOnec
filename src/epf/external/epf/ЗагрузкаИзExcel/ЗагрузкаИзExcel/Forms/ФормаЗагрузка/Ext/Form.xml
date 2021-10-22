@@ -676,7 +676,7 @@
 									<ExtendedTooltip name="СтраницаМакетДанныхРасширеннаяПодсказка" id="319"/>
 									<ChildItems>
 										<CommandBar name="Группа10" id="364">
-											<CommandSource>Item.ТабДок</CommandSource>
+											<CommandSource>Item.ТабДокОбъект</CommandSource>
 											<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="365"/>
 											<ChildItems>
 												<Button name="ТаблицаНомеровКолонокПрочитать" id="320">
@@ -691,14 +691,14 @@
 												</Button>
 											</ChildItems>
 										</CommandBar>
-										<SpreadSheetDocumentField name="ТабДок" id="273">
-											<DataPath>ТабДок</DataPath>
+										<SpreadSheetDocumentField name="ТабДокОбъект" id="273">
+											<DataPath>ТабДокОбъект</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<ShowGrid>true</ShowGrid>
 											<ShowHeaders>true</ShowHeaders>
 											<Edit>true</Edit>
-											<ContextMenu name="ТабДокКонтекстноеМеню" id="274"/>
-											<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="275"/>
+											<ContextMenu name="ТабДокОбъектКонтекстноеМеню" id="274"/>
+											<ExtendedTooltip name="ТабДокОбъектРасширеннаяПодсказка" id="275"/>
 											<Events>
 												<Event name="OnChange">ТабДокПриИзменении</Event>
 											</Events>
@@ -1276,7 +1276,7 @@
 				<Field>ПаузаСек</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТабДок" id="424">
+		<Attribute name="ТабДокОбъект" id="424">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
