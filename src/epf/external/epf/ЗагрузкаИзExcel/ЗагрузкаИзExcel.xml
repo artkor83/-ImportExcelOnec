@@ -123,6 +123,7 @@
 			<Form>ВводТекста</Form>
 			<Form>УКО_Подключить</Form>
 			<Form>УКО_ВыборВТ</Form>
+			<Form>ФормаВыборНастроек</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>

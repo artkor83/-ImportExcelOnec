@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="23">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="24"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="35">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<RadioButtonField name="Режим" id="32">
+					<DataPath>Режим</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ColumnsCount>1</ColumnsCount>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Создать новую</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Создать новую</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выбор из списка</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Выбор из списка</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="РежимКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="РежимРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">РежимПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<InputField name="КлючНастроекНовый" id="37">
+					<DataPath>КлючНастроекНовый</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="КлючНастроекНовыйКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="КлючНастроекНовыйРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<Button name="ОбновитьИмя" id="30">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьИмя</CommandName>
+					<ExtendedTooltip name="ОбновитьИмяРасширеннаяПодсказка" id="31"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="28">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="ПоискДанных" id="25">
+					<DataPath>ПоискДанных</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПоискДанныхКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПоискДанныхРасширеннаяПодсказка" id="27"/>
+					<Events>
+						<Event name="EditTextChange">ПоискДанныхИзменениеТекстаРедактирования</Event>
+						<Event name="Clearing">ПоискДанныхОчистка</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаИстория" id="40">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаИстория</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаИсторияКонтекстноеМеню" id="43"/>
+			<AutoCommandBar name="ТаблицаИсторияКоманднаяПанель" id="46">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаИсторияРасширеннаяПодсказка" id="48"/>
+			<SearchStringAddition name="ТаблицаИсторияСтрокаПоиска" id="50">
+				<AdditionSource>
+					<Item>ТаблицаИстория</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИсторияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаИсторияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаИсторияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаИстория</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИсторияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаИсторияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаИсторияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаИстория</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИсторияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаИсторияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаИсторияКлючНастроек" id="14">
+					<DataPath>ТаблицаИстория.КлючНастроек</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИсторияКлючНастроекКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаИсторияКлючНастроекРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ТаблицаИсторияДатаЗаписи" id="17">
+					<DataPath>ТаблицаИстория.ДатаЗаписи</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИсторияДатаЗаписиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаИсторияДатаЗаписиРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаблицаИсторияОписание" id="20">
+					<DataPath>ТаблицаИстория.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаИсторияОписаниеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаИсторияОписаниеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="41">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаИзExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаИстория" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица история</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КлючНастроек" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ настроек</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаЗаписи" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата записи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоВыбранная" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это выбранная</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПоискДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Режим" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючНастроекНовый" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ настроек (новый)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаИстория</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаИстория.ЭтоВыбранная</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+		</Command>
+		<Command name="ОбновитьИмя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить имя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить имя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьИмя</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Параметр1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>
