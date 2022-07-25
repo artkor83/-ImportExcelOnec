@@ -5,10 +5,10 @@
 	<ScalingMode>Compact</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаПолучитьДанные" id="495">
+			<Button name="ФормаПолучитьДанные" id="509">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПолучитьДанные</CommandName>
-				<ExtendedTooltip name="ФормаПолучитьДанныеРасширеннаяПодсказка" id="493"/>
+				<ExtendedTooltip name="ФормаПолучитьДанныеРасширеннаяПодсказка" id="507"/>
 			</Button>
 			<Button name="ФормаЗагрузитьДанные" id="82">
 				<Type>CommandBarButton</Type>
@@ -254,7 +254,7 @@
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаПолучитьДанные" id="477">
+								<UsualGroup name="ГруппаПолучитьДанные" id="491">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -270,9 +270,9 @@
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПолучитьДанныеРасширеннаяПодсказка" id="475"/>
+									<ExtendedTooltip name="ГруппаПолучитьДанныеРасширеннаяПодсказка" id="489"/>
 									<ChildItems>
-										<UsualGroup name="ГруппаExcel" id="481">
+										<UsualGroup name="ГруппаExcel" id="495">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -288,13 +288,13 @@
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаExcelРасширеннаяПодсказка" id="479"/>
+											<ExtendedTooltip name="ГруппаExcelРасширеннаяПодсказка" id="493"/>
 											<ChildItems>
-												<UsualGroup name="Группа1" id="489">
+												<UsualGroup name="Группа1" id="503">
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="487"/>
+													<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="501"/>
 													<ChildItems>
 														<InputField name="ИмяФайлаЗагрузки" id="301">
 															<DataPath>ИмяФайлаЗагрузки</DataPath>
@@ -327,10 +327,10 @@
 																<Event name="StartChoice">СписокЛистовНачалоВыбора</Event>
 															</Events>
 														</InputField>
-														<Button name="ОбновитьExcel" id="485">
+														<Button name="ОбновитьExcel" id="499">
 															<Type>UsualButton</Type>
 															<CommandName>Form.Command.ОбновитьExcel</CommandName>
-															<ExtendedTooltip name="ОбновитьExcelРасширеннаяПодсказка" id="483"/>
+															<ExtendedTooltip name="ОбновитьExcelРасширеннаяПодсказка" id="497"/>
 														</Button>
 													</ChildItems>
 												</UsualGroup>
@@ -365,11 +365,11 @@
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
-										<UsualGroup name="Группа4" id="473">
+										<UsualGroup name="Группа4" id="487">
 											<Group>Horizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="471"/>
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="485"/>
 											<ChildItems>
 												<InputField name="НомерНачало" id="307">
 													<DataPath>НомерНачало</DataPath>
@@ -523,6 +523,9 @@
 														<ContextMenu name="ТаблицаДанныхExcelОбъектУправлениеПоискомКонтекстноеМеню" id="153"/>
 														<ExtendedTooltip name="ТаблицаДанныхExcelОбъектУправлениеПоискомРасширеннаяПодсказка" id="154"/>
 													</SearchControlAddition>
+													<Events>
+														<Event name="OnChange">ТаблицаДанныхExcelОбъектПриИзменении</Event>
+													</Events>
 													<ChildItems>
 														<CheckBoxField name="ТаблицаДанныхExcelОбъектПометка" id="370">
 															<DataPath>Объект.ТаблицаДанныхExcelОбъект.Пометка</DataPath>
@@ -633,6 +636,11 @@
 																				<Type>CommandBarButton</Type>
 																				<CommandName>Form.Command.ТаблицаНомеровКолонокЗагрузитьТипыМакет</CommandName>
 																				<ExtendedTooltip name="ТаблицаНомеровКолонокТаблицаНомеровКолонокЗагрузитьТипыМакетРасширеннаяПодсказка" id="388"/>
+																			</Button>
+																			<Button name="ТаблицаНомеровКолонокТаблицаНомеровКолонокЗагрузитьОднуСтрокуСТипамиМакет" id="452">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ТаблицаНомеровКолонокЗагрузитьОднуСтрокуСТипамиМакет</CommandName>
+																				<ExtendedTooltip name="ТаблицаНомеровКолонокТаблицаНомеровКолонокЗагрузитьОднуСтрокуСТипамиМакетРасширеннаяПодсказка" id="453"/>
 																			</Button>
 																		</ChildItems>
 																	</Popup>
@@ -1184,7 +1192,30 @@
 							<ViewStatusLocation>Top</ViewStatusLocation>
 							<SearchControlLocation>CommandBar</SearchControlLocation>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТаблицаИсторияКонтекстноеМеню" id="416"/>
+							<ContextMenu name="ТаблицаИсторияКонтекстноеМеню" id="416">
+								<ChildItems>
+									<Button name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияВыбрать" id="456">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТаблицаИсторияВыбрать</CommandName>
+										<ExtendedTooltip name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияВыбратьРасширеннаяПодсказка" id="457"/>
+									</Button>
+									<Button name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияУдалить" id="458">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТаблицаИсторияУдалить</CommandName>
+										<ExtendedTooltip name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияУдалитьРасширеннаяПодсказка" id="459"/>
+									</Button>
+									<Button name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияСкопировать" id="460">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТаблицаИсторияСкопировать</CommandName>
+										<ExtendedTooltip name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияСкопироватьРасширеннаяПодсказка" id="461"/>
+									</Button>
+									<Button name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияПереименовать" id="462">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТаблицаИсторияПереименовать</CommandName>
+										<ExtendedTooltip name="ТаблицаИсторияКонтекстноеМенюТаблицаИсторияПереименоватьРасширеннаяПодсказка" id="463"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ТаблицаИсторияКоманднаяПанель" id="417">
 								<ChildItems>
 									<Button name="ТаблицаИсторияТаблицаИсторияВыбрать" id="443">
@@ -1196,6 +1227,16 @@
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ТаблицаИсторияУдалить</CommandName>
 										<ExtendedTooltip name="ТаблицаИсторияТаблицаИсторияУдалитьРасширеннаяПодсказка" id="448"/>
+									</Button>
+									<Button name="ТаблицаИсторияТаблицаИсторияСкопировать" id="454">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТаблицаИсторияСкопировать</CommandName>
+										<ExtendedTooltip name="ТаблицаИсторияТаблицаИсторияСкопироватьРасширеннаяПодсказка" id="455"/>
+									</Button>
+									<Button name="ТаблицаИсторияТаблицаИсторияПереименовать" id="464">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТаблицаИсторияПереименовать</CommandName>
+										<ExtendedTooltip name="ТаблицаИсторияТаблицаИсторияПереименоватьРасширеннаяПодсказка" id="465"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -1257,7 +1298,7 @@
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Объект" id="452">
+		<Attribute name="Объект" id="466">
 			<Type>
 				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаИзExcel</v8:Type>
 			</Type>
@@ -1271,7 +1312,7 @@
 				<Field>1/0:8cd2e420-5e64-479f-a38c-18d8c4d48af9</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТаблицаНомеровКолонок" id="458">
+		<Attribute name="ТаблицаНомеровКолонок" id="472">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1283,7 +1324,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 			<Columns>
-				<Column name="Имя" id="453">
+				<Column name="Имя" id="467">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1298,7 +1339,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Представление" id="459">
+				<Column name="Представление" id="473">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1313,7 +1354,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="НомерКолонки" id="464">
+				<Column name="НомерКолонки" id="478">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1329,7 +1370,7 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
-				<Column name="ТипЗначения" id="468">
+				<Column name="ТипЗначения" id="482">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1340,7 +1381,7 @@
 						<v8:Type>v8:TypeDescription</v8:Type>
 					</Type>
 				</Column>
-				<Column name="ТипЗначенияПредставление" id="491">
+				<Column name="ТипЗначенияПредставление" id="505">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1357,7 +1398,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Алгоритм_ПоискДанныхСтроки" id="465">
+		<Attribute name="Алгоритм_ПоискДанныхСтроки" id="479">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1373,7 +1414,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="Алгоритм_ЗагрузкаДанныхСтроки" id="469">
+		<Attribute name="Алгоритм_ЗагрузкаДанныхСтроки" id="483">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1389,7 +1430,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ТаблицаВнешниеФайлы" id="492">
+		<Attribute name="ТаблицаВнешниеФайлы" id="506">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1401,7 +1442,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 			<Columns>
-				<Column name="Имя" id="454">
+				<Column name="Имя" id="468">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1416,7 +1457,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Данные" id="460">
+				<Column name="Данные" id="474">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1425,7 +1466,7 @@
 					</Title>
 					<Type/>
 				</Column>
-				<Column name="ТипФайла" id="466">
+				<Column name="ТипФайла" id="480">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1442,7 +1483,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Алгоритм_ПередЗагрузкойДанных" id="505">
+		<Attribute name="Алгоритм_ПередЗагрузкойДанных" id="519">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1458,7 +1499,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ПаузаСек" id="488">
+		<Attribute name="ПаузаСек" id="502">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1477,7 +1518,7 @@
 				<Field>ПаузаСек</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТабДокОбъект" id="484">
+		<Attribute name="ТабДокОбъект" id="498">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1489,7 +1530,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="РежимЧтенияДанных" id="480">
+		<Attribute name="РежимЧтенияДанных" id="494">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1504,7 +1545,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТаблицаЗначения" id="478">
+		<Attribute name="ТаблицаЗначения" id="492">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1519,7 +1560,7 @@
 				<Field>ТаблицаЗначения</Field>
 			</Save>
 			<Columns>
-				<Column name="Имя" id="455">
+				<Column name="Имя" id="469">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1534,7 +1575,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Значение" id="461">
+				<Column name="Значение" id="475">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1545,7 +1586,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ИмяФайлаЗагрузки" id="476">
+		<Attribute name="ИмяФайлаЗагрузки" id="490">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1562,7 +1603,7 @@
 			<SavedData>true</SavedData>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="ИмяЛиста" id="474">
+		<Attribute name="ИмяЛиста" id="488">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1579,7 +1620,7 @@
 			<SavedData>true</SavedData>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="НомерНачало" id="472">
+		<Attribute name="НомерНачало" id="486">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1596,7 +1637,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="НомерКонец" id="504">
+		<Attribute name="НомерКонец" id="518">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1613,7 +1654,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ИмяФайлаЗагрузкиМакет" id="503">
+		<Attribute name="ИмяФайлаЗагрузкиМакет" id="517">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1630,7 +1671,7 @@
 			<SavedData>true</SavedData>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="СписокЛистов" id="482">
+		<Attribute name="СписокЛистов" id="496">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1645,7 +1686,7 @@
 				<Field>СписокЛистов</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="СписокТиповПодбор" id="502">
+		<Attribute name="СписокТиповПодбор" id="516">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1656,7 +1697,7 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ШагЗагрузкиДанных" id="501">
+		<Attribute name="ШагЗагрузкиДанных" id="515">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1675,7 +1716,7 @@
 				<Field>ШагЗагрузкиДанных</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ЗагрузкаВТранзакции" id="506">
+		<Attribute name="ЗагрузкаВТранзакции" id="520">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1689,7 +1730,7 @@
 				<Field>ЗагрузкаВТранзакции</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ШагЧтенияДанных" id="490">
+		<Attribute name="ШагЧтенияДанных" id="504">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1705,7 +1746,7 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТестоваяЗагрузка" id="500">
+		<Attribute name="ТестоваяЗагрузка" id="514">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1716,7 +1757,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="Алгоритм_ПослеЧтенияДанных" id="486">
+		<Attribute name="Алгоритм_ПослеЧтенияДанных" id="500">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1732,7 +1773,7 @@
 			</Type>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="КлючНастроекОсновной" id="496">
+		<Attribute name="КлючНастроекОсновной" id="510">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1750,7 +1791,7 @@
 				<Field>КлючНастроекОсновной</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ТаблицаИстория" id="494">
+		<Attribute name="ТаблицаИстория" id="508">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1761,7 +1802,7 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="КлючНастроек" id="456">
+				<Column name="КлючНастроек" id="470">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1776,7 +1817,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="ДатаЗаписи" id="462">
+				<Column name="ДатаЗаписи" id="476">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1790,7 +1831,7 @@
 						</v8:DateQualifiers>
 					</Type>
 				</Column>
-				<Column name="Описание" id="467">
+				<Column name="Описание" id="481">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1805,7 +1846,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="ЭтоВыбранная" id="470">
+				<Column name="ЭтоВыбранная" id="484">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1818,7 +1859,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="НастройкиСохранения" id="499">
+		<Attribute name="НастройкиСохранения" id="513">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1829,7 +1870,7 @@
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Ключ" id="457">
+				<Column name="Ключ" id="471">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1844,7 +1885,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Значение" id="463">
+				<Column name="Значение" id="477">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1857,7 +1898,7 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Настройка" id="498">
+		<Attribute name="Настройка" id="512">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1872,7 +1913,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Настройки_СохранятьТаблицаДанныхExcel" id="497">
+		<Attribute name="Настройки_СохранятьТаблицаДанныхExcel" id="511">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -2515,11 +2556,69 @@
 					<v8:content>Удалить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Ctrl+X</Shortcut>
 			<Picture>
 				<xr:Ref>StdPicture.Delete</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ТаблицаИсторияУдалить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ТаблицаНомеровКолонокЗагрузитьОднуСтрокуСТипамиМакет" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить одну строку  типы (макет)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица номеров колонок загрузить типы макет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаблицаНомеровКолонокЗагрузитьОднуСтрокуСТипамиМакет</Action>
+		</Command>
+		<Command name="ТаблицаИсторияСкопировать" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица история скопировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+F9</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.CloneObject</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ТаблицаИсторияСкопировать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ТаблицаИсторияПереименовать" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переименовать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица история переименовать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+F2</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Rename</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ТаблицаИсторияПереименовать</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
