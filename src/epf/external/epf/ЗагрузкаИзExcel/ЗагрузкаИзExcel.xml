@@ -125,6 +125,7 @@
 			<Form>УКО_Подключить</Form>
 			<Form>УКО_ВыборВТ</Form>
 			<Form>ФормаВыборНастроек</Form>
+			<Form>ФормаРедакторСтроки</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
