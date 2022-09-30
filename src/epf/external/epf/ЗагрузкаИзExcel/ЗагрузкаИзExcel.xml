@@ -126,6 +126,7 @@
 			<Form>УКО_ВыборВТ</Form>
 			<Form>ФормаВыборНастроек</Form>
 			<Form>ФормаРедакторСтроки</Form>
+			<Form>ФормаРедакторТаблицыЗначений</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
